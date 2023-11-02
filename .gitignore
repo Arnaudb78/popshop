@@ -1,0 +1,10 @@
+# python
+venv/
+.env
+
+# Django 
+*.log
+__pycache__
+migrations/
+popshop.sqlite3
+info.md
