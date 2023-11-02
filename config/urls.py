@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    # path("", include("popshop.urls")),  # routes locales
+    path("", include("popshop.urls")),  # routes locales
     path("admin/", admin.site.urls),
 ]
 
