@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<!-- www/templates/article_list.html -->
+{% block content %}
+<div class="row">
+    <h1 class="col-12">Liste des articles</h1>
+
+    {% for article in articles %}
+    <div class="col-4 mb-4">
+        {% if article.thumb %}
+        <!-- <img src="{{ article.thumb.url }}" alt="{{ article.title }}" class="img-fluid" /> -->
+        <!-- <p>{{ article.thumb.size }} {{ article.thumb.width }} {{ article.thumb.height }}</p> -->
+        {% endif %}
+        <p>{{ article.title }}</p>
+        <!-- <a href="{% url 'article_detail' article.pk %}">Lire la suite</a> -->
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
